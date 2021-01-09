@@ -1,0 +1,169 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    color: #212121;
+    background-color: #fafafa;
+    margin: 0;
+}
+
+body.darkmode {
+    color: #fafafa;
+    background-color: #212121;
+}
+
+content {
+    max-width: 860px;
+    width: 100%;
+
+    padding: 0 20px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+    display: flex;
+}
+
+.top-bar-title {
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-family: Lato,Helvetica,sans-serif;
+    font-weight: 700;
+    line-height: 6rem;
+}
+
+.top-bar-right {
+    font-size: 1.6rem;
+    font-family: Lato,Helvetica,sans-serif;
+    font-weight: 700;
+    line-height: 6rem;
+}
+
+.resume-link {
+    text-decoration: none;
+    color: #212121;
+}
+
+.darkmode .resume-link {
+    color: #fafafa;
+}
+
+.resume-link:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.darkmode .resume-link:hover {
+    color: lightskyblue;
+}
+
+.brightness-switch {
+    color: #212121;
+}
+
+.darkmode .brightness-switch {
+    color: #fafafa;
+}
+
+.brightness-switch:hover {
+    color: blue;
+}
+
+.darkmode .brightness-switch:hover {
+    color: lightskyblue;
+}
+
+.top-bar-filler {
+    flex: 1;
+}
+
+.main-vertical-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: calc(100vh - 60px); */
+    flex: 1;
+}
+
+.main-horizontal-align {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.main img {
+    width: 20rem;
+    height: auto;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.darkmode .main img {
+    filter: invert(1);
+}
+
+.main h1 {
+    width: fit-content;
+    align-self: center;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    font-family: Lato,Helvetica,sans-serif;
+}
+
+.main h2 {
+    width: fit-content;
+    align-self: center;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    font-family: Lato,Helvetica,sans-serif;
+    font-weight: 700;
+    margin: 1rem 0 2.2rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+
+    font-family: Merriweather,Georgia,serif;
+    font-size: 1.6em;
+    font-weight: 300;
+    line-height: 2rem;
+    margin-bottom: 10px;
+}
+
+.action-bar {
+    align-self: center;
+    display: flex;
+}
+
+.action-bar a {
+    color: black;
+    text-decoration: none;
+    padding: 12px;
+    font-size: 1.75rem;
+}
+
+.action-bar a:hover {
+    color: blue;
+}
+
+.darkmode .action-bar a {
+    color: #fafafa;
+}
+
+.darkmode .action-bar a:hover {
+    color: lightskyblue;
+}
